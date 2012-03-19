@@ -1,0 +1,97 @@
+//////// ------------------------------------------------ ////////
+// use this stylesheet to create SASS class objects for @extend //
+//////// ------------------------------------------------ ////////
+
+$primary_font_family: #{Arial, Verdana, Helvetica, sans-serif};
+
+$font-xlarge: 46px;
+$font-large: 18px;
+$font-medium: 16px;
+$font-medium-small: 13px;
+$font-small: 12px;
+$font-smaller: 11px;
+$font-smallest: 10px;
+
+$border-radius: 4px;
+
+.header_reset {
+	@include header_reset;
+}
+
+.hero_button_gradient {
+	@include grey_gradient;
+}
+
+.hero_button_gradient_hover {
+	@include grey_gradient_hover;
+}
+
+.standard_corners {
+	@include standard_corners;
+}
+
+.MerchSlot_defaults {
+	margin: 0 10px !important;
+	width: 304px;
+	float: left;
+}
+
+.MerchSlot {
+	width: 100%;
+	float: left;
+	@include clearfix;
+	ul {
+		width: 100%;
+		float: left;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		.ie7 & {
+			line-height: 0 !important;
+			p {
+				line-height: 160%;
+			}
+		}
+		img {
+			margin-bottom: 20px;
+			width: 304px;
+			@include border_radius(4px);
+		}
+		p {
+			&:last-child {
+				margin-bottom: 20px !important;
+			}
+		}
+		@extend .MerchSlot_defaults;
+		&:first-child {
+			margin-left: 0 !important;
+		}
+		&:last-child {
+			margin-right: 0 !important;
+		}
+	}
+}
+
+/* editorial banners - CMS integration */
+.editorial_banners_top {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	li {
+		margin-bottom: #{10 / $em}em;
+	}
+}
+
+.editorial_banners_bottom {
+	@extend .editorial_banners_top;
+	li {
+		margin-top: #{10 / $em}em;
+	}
+}
+
+
+// ----- standard UI elements ----- //
+
+

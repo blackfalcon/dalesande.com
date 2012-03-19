@@ -1,0 +1,13 @@
+/////// generic b/w blocks ////////
+// ----------------------------------------------
+        $bravo_grey:	adjust-color($alpha_grey, $red: 51, $green: 51, $blue: 51);
+      $charlie_grey:	adjust-color($alpha_grey, $red: 102, $green: 102, $blue: 102);
+$charlie_grey_alpha:	adjust-color($charlie_grey, $red: 51, $green: 51, $blue: 51);
+
+        $delta_grey:	adjust-color($alpha_grey, $red: 204, $green: 204, $blue: 204);
+         $echo_grey:	adjust-color($alpha_grey, $red: 239, $green: 239, $blue: 239);
+		  $fox_grey:	lighten($alpha_grey, 100%); 
+
+         $golf_grey:	$not_set;
+        $hotel_grey:	$not_set;
+        $india_grey:	$not_set;

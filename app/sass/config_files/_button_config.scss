@@ -1,0 +1,93 @@
+////////// Primary button values ////////////
+// --------------------------------------- //
+@mixin primary_button_color {
+	//@include golf_color_gradient;
+	@extend .golf_color_gradient;
+}
+
+@mixin primary_button_hover {
+	//@include hotel_color_gradient;
+	@extend .hotel_color_gradient;
+}
+
+@mixin primary_button_active {
+	//@include india_color_gradient;
+	@extend .india_color_gradient;
+}
+
+@mixin primary_button_border {
+	border: 1px solid $primary_button_border_color;
+}
+
+$primary_button_padding: 10;
+
+
+////////// Secondary button values ////////////
+// ----------------------------------------- //
+@mixin secondary_button_color {
+	//@include delta_color_gradient;
+	@extend .delta_color_gradient;
+}
+	
+@mixin secondary_button_hover {
+	//@include echo_color_gradient;
+	@extend .echo_color_gradient;
+}
+
+@mixin secondary_button_active {
+	//@include fox_color_gradient;
+	@extend .fox_color_gradient;
+}
+
+
+
+////////// Icon button values ////////////
+// ------------------------------------ //
+@mixin icon_button_color {
+	//@include delta_color_gradient;
+	@extend .delta_color_gradient;
+}
+	
+@mixin icon_button_hover {
+	//@include echo_color_gradient;
+	@extend .echo_color_gradient;
+}
+
+@mixin icon_button_active {
+	//@include fox_color_gradient;
+	@extend .fox_color_gradient;
+}
+
+
+
+////////// Big pill button values ////////////
+// ---------------------------------------- //
+@mixin secondary_big_pill_button_color {
+	//@include alpha_color_gradient;
+	@extend .alpha_color_gradient;
+}
+
+@mixin secondary_big_pill_button_color_hover {
+	//@include bravo_color_gradient;
+	@extend .bravo_color_gradient;
+}
+
+@mixin secondary_big_pill_button_color_active {
+	//@include charlie_color_gradient;
+	@extend .charlie_color_gradient;
+}
+
+
+
+////////// Disabled button values ////////////
+// ---------------------------------------- //
+// @mixin disabled_button_color {
+// 	@extend .alpha_color_gradient;
+// }
+// @mixin disabled_button_hover {
+// 	@extend .bravo_color_gradient;
+// }
+// 
+// @mixin disabled_button_active {
+// 	@extend .bravo_color_gradient;
+// }

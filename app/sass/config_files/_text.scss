@@ -1,0 +1,43 @@
+// * ------------------
+// Type defaults
+// * ------------------
+// only need to edit default font size and family, magical SASS takes care of the rest
+           $font_size:		12;
+                  $em:		$font_size;
+
+           $heading_1:		$font-size * 12;
+           $heading_2:		32;
+           $heading_3:		28;
+           $heading_4:		18;
+
+  $xx_small_point_size:		0;
+   $x_small_point_size:		0;
+     $small_point_size:		0;
+     $large_point_size:		0;
+   $x_large_point_size:		24;
+  $xx_large_point_size:		0;
+ $xxx_large_point_size:		0;
+$xxxx_large_point_size:		0;
+
+                 $line:		$font_size * 1.5;
+          $line_height:		#{$line / $em}em;
+
+  $primary_font_family:		#{Arial, sans-serif};
+
+$secondary_font_family:		#{Verdana, Arial, Helvetica, sans-serif};
+
+  $heading_font_family:		#{Arial, Helvetica, serif};
+  
+        $webfont_alpha:		#{'Embrionic85Swash', Arial, sans-serif};
+        
+      $icon_font_alpha:		#{'zocial', Arial, sans-serif};
+
+        
+        
+@mixin primary_font_family {
+	font-family: $primary_font_family;
+}
+
+@mixin secondary_font_family {
+	font-family: $secondary_font_family;
+}

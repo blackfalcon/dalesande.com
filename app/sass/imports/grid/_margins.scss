@@ -1,0 +1,22 @@
+// this mixin is called into 'the_grid' 
+// supporting mixins for @mixin grid_placement
+@mixin grid_margin_alpha($margin_calc) {
+	margin: {
+		left: 0;
+		right: $margin_calc;
+	}
+}
+
+@mixin grid_margin_omega($margin_calc) {
+	margin: {
+		left: $margin_calc;
+		right: 0;
+	}
+}
+
+@mixin grid_margin_default($margin_calc) {
+	margin: {
+		left: $margin_calc;
+		right: $margin_calc;
+	}
+}

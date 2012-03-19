@@ -1,0 +1,73 @@
+///// site styles
+body {
+	background: $alpha_grey; 
+}
+
+a {
+	text-decoration: none;
+	color: $charlie_grey;
+}
+
+.icon_links {
+	color: $white;
+	font-size: 50px;
+	margin-top: 30px;
+	a {
+		display: inline-block;
+		//-webkit-transition: all 2s ease, 0.3s linear;
+		&:hover {
+			color: red;
+			//font-size: 100px;
+			//position: relative;
+		}
+	}
+}
+
+.test {
+	font-family: $icon_font_alpha;
+	color: $white;
+	font-size: 30px;
+}
+
+.icon {
+	display: inline-block;
+	cursor: pointer;
+	margin-right: 20px;
+	font-family: $icon_font_alpha;
+	&:last-child {
+		margin: 0;
+	}
+	span {
+		font-size: 0;
+	}	
+}
+
+.twitter {
+	@extend .icon;
+}
+
+.linkedin {
+	@extend .icon;
+}
+
+.github {
+	@extend .icon;
+}
+
+.site_container {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	color: $bravo_grey;
+	text-align: center;
+	margin-top: -200px;
+	margin-left: -300px;
+	h1 {
+		font-family: $webfont_alpha;
+		color: $charlie_grey;
+	}
+	p {
+		@include x_large;
+	}	
+}
+

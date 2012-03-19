@@ -1,3 +1,53 @@
-body {
-	background: orange;
-}
+//@import "_work_notes";
+
+// Config file dependencies
+// -------------------------------------------------------
+@import "config";
+//@import "config_files/web_fonts";
+//@import "config_files/button_config";
+@import "config_files/design_config";
+
+@import "config_files/font_libraries/Embrionic85Swash";
+@import "config_files/font_libraries/zocial";
+
+
+
+// ------------ core app imports ------------ //
+// _imports is the aggregate file of all Axle methods //
+@import "imports/_imports.scss";
+
+
+
+// Common use reset CSS, updated with Axle references //
+@import "imports/reset.scss";
+
+
+
+// The following are required to be in this sequence //
+// Global design changes are to be addressed in these files //
+// These files will consume methods and information from _imports.scss //
+//@import "buttons/_buttons";
+@import "text";
+//@import "oocss/_oocss";
+//@import "forms";
+@import "design";
+
+
+// ------------ component styles --------------- //
+// _components is the aggregate file of all site assembly widget SCSS //
+//@import "widgets/components/_components";
+
+
+// ------------ widget styles --------------- //
+// _widgets is the aggregate file of all site assembly widget SCSS //
+//@import "widgets/_widgets";
+
+
+// ---------- Full screen styles ------------ //
+// Screen-view specific layout SCSS files //
+//@import "screens/_music";
+//@import "screens/_ehp";
+
+
+/// ------------ Temp style adjust for Foresee survey ------------ ///
+//@import "buttons/foresee_fix";

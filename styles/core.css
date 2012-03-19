@@ -1,4 +1,235 @@
-/* line 1, ../app/sass/core.scss */
+@font-face {
+  font-family: 'Embrionic85Swash';
+  src: url("fonts/embrionic85-webfont.eot");
+  src: url("fonts/embrionic85-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/embrionic85-webfont.woff") format("woff"), url("fonts/embrionic85-webfont.ttf") format("truetype"), url("fonts/embrionic85-webfont.svg#Embrionic85Swash") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'zocial';
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/zocial-regular-webfont.eot");
+  src: url("fonts/zocial-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/zocial-regular-webfont.woff") format("woff"), url("fonts/zocial-regular-webfont.ttf") format("truetype"), url("fonts/zocial-regular-webfont.svg#ZocialRegular") format("svg");
+}
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, menu, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+
 body {
-  background: orange;
+  line-height: 1;
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+article, aside, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+img, object, embed {
+  max-width: 100%;
+}
+
+img {
+  border-style: none;
+  border-color: transparent;
+  border-width: 0;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+a:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+input, textarea, select, button {
+  font-family: inherit;
+  font-weight: inherit;
+  background-color: #fff;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+table {
+  font-size: inherit;
+  font: 100%;
+}
+
+sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif;
+}
+
+.clickable, label {
+  cursor: pointer;
+}
+
+input[type=button], input[type=submit] {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+  margin: 0;
+  width: auto;
+  overflow: visible;
+}
+
+.ie7 img {
+  -ms-interpolation-mode: bicubic;
+}
+
+a:link {
+  -webkit-tap-highlight-color: #98c9d9;
+}
+
+ins {
+  background-color: #f6efad;
+  color: black;
+  text-decoration: none;
+}
+
+mark {
+  background-color: #f6efad;
+  color: black;
+  font-style: italic;
+  font-weight: bold;
+}
+
+::selection {
+  background: #f6efad;
+  color: #444444;
+}
+
+::-moz-selection {
+  background: #f6efad;
+  color: #444444;
+}
+
+html {
+  font: 0.75em/1.5em Arial, sans-serif;
+  color: #111111;
+}
+
+h1 {
+  font-size: 12em;
+  font-weight: normal;
+}
+
+body {
+  background: #111111;
+}
+
+a {
+  text-decoration: none;
+  color: #777777;
+}
+
+.icon_links {
+  color: white;
+  font-size: 50px;
+  margin-top: 30px;
+}
+.icon_links a {
+  display: inline-block;
+}
+.icon_links a:hover {
+  color: red;
+}
+
+.test {
+  font-family: "zocial", Arial, sans-serif;
+  color: white;
+  font-size: 30px;
+}
+
+.icon, .twitter, .linkedin, .github {
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 20px;
+  font-family: "zocial", Arial, sans-serif;
+}
+.icon:last-child, .twitter:last-child, .linkedin:last-child, .github:last-child {
+  margin: 0;
+}
+.icon span, .twitter span, .linkedin span, .github span {
+  font-size: 0;
+}
+
+.site_container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: #444444;
+  text-align: center;
+  margin-top: -200px;
+  margin-left: -300px;
+}
+.site_container h1 {
+  font-family: "Embrionic85Swash", Arial, sans-serif;
+  color: #777777;
+}
+.site_container p {
+  font-size: 2em;
+  line-height: 1.5em;
 }

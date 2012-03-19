@@ -1,0 +1,101 @@
+/////////////// Config dependencies ////////////////
+// -------------------------------------------------------
+@import "config_files/not_set_colors";
+
+
+
+///// default image directory /////
+$imgDir: "images/";
+
+
+
+/////// OOCSS generic color blocks ////////
+// ----------------------------------------------
+  $alpha_primary:		#31283F;		// red
+  $bravo_primary:		#898171;		// green
+$charlie_primary:		#F6EFAD;		// yellow
+  $delta_primary:		#8CC3D5;		// blue
+   $echo_primary:		#524A51;		// accent
+   
+     $alpha_grey:		#111;			//black
+
+
+// Based on object colors, the following imports will create the color scales
+@import "config_files/generic_color_math";
+@import "config_files/generic_greyscale_math";
+
+// Gradient colors are needed here to be used semantically 
+@import "config_files/gradient_colors";
+
+
+
+/////// axle's semantic combinations ////////
+// Semantic variables should always be matched up with abstract values, never semantic to semantic
+// ---------------------------------------------------------------------------------------------------
+
+// abstract 'white' value to easily applied to semantic class objects
+$white:										#fff;
+
+// default shadow colors
+$shadow_color:								fade-out($alpha_grey, 0.5);
+
+// primary header font color
+$primary_header_color:						$alpha_grey;
+
+// primary font color for the app
+$primary_text:								$bravo_grey;
+
+// default <a href="#"> link color
+$href_color:								$delta_color;
+$href_color_alt:							$delta_color_bravo;
+
+// used with the <ins> tag
+// http://www.w3schools.com/tags/tag_ins.asp
+$ins_color:									$charlie_color;
+
+// used with the <mark> tag
+// http://www.w3schools.com/html5/tag_mark.asp
+$mark_color:								$charlie_color;
+
+// webkit tap highlight color
+$webkit_tap_hightlight:						$delta_color_bravo;
+
+// overrides the default content selection color in the browser
+$selection_color:							$charlie_color;
+$selection_text_color:						$primary_text;
+
+// border color
+$border_color:								$charlie_grey_alpha;
+
+// form colors
+$input_disabled:							$bravo_grey;
+$input_disabled_bkg:						lighten($input_disabled, 75%);
+$input_disabled_border:						lighten($input_disabled, 50%);
+$input_disabled_text:						lighten($input_disabled, 50%);
+
+
+$form_field_background_color:				$white;
+$form_field_focus_color:					$white;		// changes background color when field has focus
+$form_field_fail_bkg:						$white;
+
+
+$form_field_border:							$charlie_grey_alpha;
+$form_field_border_fail:					$alpha_color;
+$form_field_focus_border_color:				$charlie_grey_alpha;
+
+
+$form_field_text:							$primary_text;
+$error_text:								$alpha_color;
+$form_field_fail:							$alpha_color;
+$form_field_text_fail:						$alpha_color;
+$instructional_text:						$charlie_grey_alpha;
+
+
+$primary_button_border_color:				$bravo_color;
+$secondary_button_border_color:				$bravo_grey;
+$button_text:								$white;
+
+
+$alert_background_color:					$charlie_color;
+
+

@@ -1,0 +1,69 @@
+// ---------------------------- reset magic --------------------------------//
+
+@mixin header_reset {
+	html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, menu, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+	background: transparent;
+	}
+	
+	ol,ul {
+		list-style: none;
+	}
+}
+
+// -----------------------------  mixin magic ------------------------------- //
+@mixin grey_gradient {
+	@include linear_gradient_legacy_safari (#{color-stop(0%,#616161), color-stop(32%,#505050), color-stop(81%,#2f2f2f), color-stop(100%,#272727)});
+	@include linear_gradient_w3c (#616161, #{#616161 0%, #505050 32%, #2f2f2f 81%, #272727 100%});
+	@include linear_gradient_legacy_ie (#616161, #272727);
+}
+
+@mixin grey_gradient_hover {
+	@include linear_gradient_legacy_safari (#{color-stop(0%,#272727), color-stop(19%,#2f2f2f), color-stop(68%,#505050), color-stop(100%,#616161)});
+	@include linear_gradient_w3c (#272727, #{#272727 0%, #2f2f2f 19%, #505050 68%, #616161 100%});
+	@include linear_gradient_legacy_ie (#272727, #616161);
+}
+
+@mixin ie_transparent_gradient {
+	@include linear_gradient_legacy_ie (transparent, transparent);
+}
+
+@mixin standard_corners {
+	@include border_radius (6px, $prefixes: $prefix_defaults);
+}
+
+@mixin translucent_box ($width, $padding, $left, $position: relative) {
+	background: rgba(0, 0, 0, 0.8);
+	.ie8 &, .ie7 &, .ie6 & {
+		margin-top: 31px;
+	}
+	.ie8 &, .ie7 & {
+		background: url(images/trasn_black_bkg.png);
+	}
+	.ie6 & {
+		background: #313131;
+	}
+	padding: $padding;
+	position: $position;
+	left: $left;
+	float: left;
+}
+
+@mixin gradient_box($width, $margin-right, $min-height, $padding: 0) {
+	float: left;
+	width: $width;
+	margin-right: $margin-right;
+	min-height: $min-height;
+	border-radius: $border-radius;
+	border:1px solid #999999;
+	
+	@include linear_gradient_w3c(#fff, #{#fff 0%,#e0dfda 100%});
+	@include linear_gradient_legacy_safari (#{color-stop(0%,#fff), color-stop(100%,#e0dfda)});
+	@include linear_gradient_legacy_ie(#FFFFFF,  #e0dfda);
+	
+	padding: $padding;
+}

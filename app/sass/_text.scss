@@ -1,0 +1,14 @@
+// *-------------------------------------------------------------------------------
+// intent of the 'text' SCSS is that all essential text elements for the application are placed here
+// individual element styling will be addressed in element name spaced SCSS files
+// *-------------------------------------------------------------------------------
+
+html {
+	font: #{$font_size / 16 * 1em}/$line_height $primary_font_family;
+	color: $alpha_grey;
+}
+
+h1 {
+	font-size: #{$heading_1 / $em}em;
+	font-weight: normal;
+}
