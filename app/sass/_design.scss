@@ -10,15 +10,22 @@ a {
 
 .icon_links {
 	color: $white;
-	font-size: 50px;
+	font-size: #{$xxx_large_point_size / $em}em;
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation : landscape) {
+		font-size: #{($x_large_point_size + 6) / $em}em;
+	}
 	margin-top: 30px;
 	a {
 		display: inline-block;
-		//-webkit-transition: all 2s ease, 0.3s linear;
+		@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation : portrait) {
+			font-size: #{($xx_large_point_size - 10) / $em}em;
+			display: block;
+			&:last-child {
+				font-size: #{($xx_large_point_size - 20) / $em}em;
+			}
+		}
 		&:hover {
 			color: red;
-			//font-size: 100px;
-			//position: relative;
 		}
 	}
 }
@@ -58,16 +65,29 @@ a {
 	position: absolute;
 	left: 50%;
 	top: 50%;
+	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation : portrait) {
+	   top: 0;
+	   left: 0;
+	   margin: #{20 / $em}em 0 0 0;
+	   position: static;
+	}
 	color: $bravo_grey;
 	text-align: center;
 	margin-top: -200px;
 	margin-left: -300px;
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation : landscape) {
+		margin-top: -200px;
+		margin-left: -200px;
+	}
 	h1 {
 		font-family: $webfont_alpha;
 		color: $charlie_grey;
 	}
 	p {
 		@include x_large;
+		@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation : portrait) {
+		   font-size: #{$xx_large_point_size / $em}em;
+		}
 	}	
 }
 

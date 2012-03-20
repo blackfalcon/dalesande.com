@@ -5,10 +5,16 @@
 
 html {
 	font: #{$font_size / 16 * 1em}/$line_height $primary_font_family;
+	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation : portrait) {
+	   font-size: 125%
+	}
 	color: $alpha_grey;
 }
 
 h1 {
 	font-size: #{$heading_1 / $em}em;
 	font-weight: normal;
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation : landscape) {
+		font-size: #{$heading_2 / $em}em;
+	}
 }

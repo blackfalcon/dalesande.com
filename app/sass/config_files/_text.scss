@@ -5,8 +5,8 @@
            $font_size:		12;
                   $em:		$font_size;
 
-           $heading_1:		$font-size * 12;
-           $heading_2:		32;
+           $heading_1:		$font-size* 12;
+           $heading_2:		$font-size * 8;
            $heading_3:		28;
            $heading_4:		18;
 
@@ -14,9 +14,9 @@
    $x_small_point_size:		0;
      $small_point_size:		0;
      $large_point_size:		0;
-   $x_large_point_size:		24;
-  $xx_large_point_size:		0;
- $xxx_large_point_size:		0;
+   $x_large_point_size:		$font-size * 2;
+  $xx_large_point_size:		40;
+ $xxx_large_point_size:		50;
 $xxxx_large_point_size:		0;
 
                  $line:		$font_size * 1.5;

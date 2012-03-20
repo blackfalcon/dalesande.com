@@ -170,10 +170,20 @@ html {
   font: 0.75em/1.5em Arial, sans-serif;
   color: #111111;
 }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation : portrait) {
+  html {
+    font-size: 125%;
+  }
+}
 
 h1 {
   font-size: 12em;
   font-weight: normal;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation : landscape) {
+  h1 {
+    font-size: 8em;
+  }
 }
 
 body {
@@ -187,11 +197,25 @@ a {
 
 .icon_links {
   color: white;
-  font-size: 50px;
+  font-size: 4.167em;
   margin-top: 30px;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation : landscape) {
+  .icon_links {
+    font-size: 2.5em;
+  }
 }
 .icon_links a {
   display: inline-block;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation : portrait) {
+  .icon_links a {
+    font-size: 2.5em;
+    display: block;
+  }
+  .icon_links a:last-child {
+    font-size: 1.667em;
+  }
 }
 .icon_links a:hover {
   color: red;
@@ -225,6 +249,20 @@ a {
   margin-top: -200px;
   margin-left: -300px;
 }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation : portrait) {
+  .site_container {
+    top: 0;
+    left: 0;
+    margin: 1.667em 0 0 0;
+    position: static;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation : landscape) {
+  .site_container {
+    margin-top: -200px;
+    margin-left: -200px;
+  }
+}
 .site_container h1 {
   font-family: "Embrionic85Swash", Arial, sans-serif;
   color: #777777;
@@ -232,4 +270,9 @@ a {
 .site_container p {
   font-size: 2em;
   line-height: 1.5em;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation : portrait) {
+  .site_container p {
+    font-size: 3.333em;
+  }
 }
