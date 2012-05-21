@@ -227,16 +227,16 @@ a {
   font-size: 30px;
 }
 
-.icon, .twitter, .linkedin, .github {
+.icon, .twitter, .linkedin, .github, .googleplus {
   display: inline-block;
   cursor: pointer;
   margin-right: 20px;
   font-family: "zocial", Arial, sans-serif;
 }
-.icon:last-child, .twitter:last-child, .linkedin:last-child, .github:last-child {
+.icon:last-child, .twitter:last-child, .linkedin:last-child, .github:last-child, .googleplus:last-child {
   margin: 0;
 }
-.icon span, .twitter span, .linkedin span, .github span {
+.icon span, .twitter span, .linkedin span, .github span, .googleplus span {
   font-size: 0;
 }
 
