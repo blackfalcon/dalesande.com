@@ -14,6 +14,14 @@
   src: url("fonts/zocial-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/zocial-regular-webfont.woff") format("woff"), url("fonts/zocial-regular-webfont.ttf") format("truetype"), url("fonts/zocial-regular-webfont.svg#ZocialRegular") format("svg");
 }
 
+@font-face {
+  font-family: 'GettyRegular';
+  src: url("fonts/getty_logo-webfont.eot");
+  src: url("fonts/getty_logo-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/getty_logo-webfont.woff") format("woff"), url("fonts/getty_logo-webfont.ttf") format("truetype"), url("fonts/getty_logo-webfont.svg#GettyRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, menu, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -227,17 +235,23 @@ a {
   font-size: 30px;
 }
 
-.icon, .twitter, .linkedin, .github, .googleplus {
+.icon, .getty_icon, .twitter, .linkedin, .github, .googleplus {
   display: inline-block;
   cursor: pointer;
   margin-right: 20px;
   font-family: "zocial", Arial, sans-serif;
 }
-.icon:last-child, .twitter:last-child, .linkedin:last-child, .github:last-child, .googleplus:last-child {
+.icon:last-child, .getty_icon:last-child, .twitter:last-child, .linkedin:last-child, .github:last-child, .googleplus:last-child {
   margin: 0;
 }
-.icon span, .twitter span, .linkedin span, .github span, .googleplus span {
+.icon span, .getty_icon span, .twitter span, .linkedin span, .github span, .googleplus span {
   font-size: 0;
+}
+
+.getty_icon {
+  font-family: "GettyRegular", Arial, sans-serif;
+  font-size: 1.5em;
+  letter-spacing: -0.3em;
 }
 
 .site_container {

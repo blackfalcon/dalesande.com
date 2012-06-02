@@ -49,6 +49,13 @@ a {
 	}	
 }
 
+.getty_icon {
+	@extend .icon;
+	font-family: $getty_icons;
+	font-size: 1.5em;
+	letter-spacing: -0.3em;
+}
+
 .twitter {
 	@extend .icon;
 }
