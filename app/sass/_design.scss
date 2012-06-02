@@ -14,7 +14,9 @@ a {
 	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation : landscape) {
 		font-size: #{($x_large_point_size + 6) / $em}em;
 	}
-	margin-top: 30px;
+	&:first-of-type {
+		margin-top: 10px;
+	}
 	a {
 		display: inline-block;
 		@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation : portrait) {
@@ -70,6 +72,12 @@ a {
 
 .googleplus {
 	@extend .icon;
+}
+
+.speakerdeck {
+	font-family: 'Gill Sans', Helvetica;
+	font-weight: lighter;
+	font-size: 0.6em;
 }
 
 .site_container {

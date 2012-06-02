@@ -206,12 +206,14 @@ a {
 .icon_links {
   color: white;
   font-size: 4.167em;
-  margin-top: 30px;
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation : landscape) {
   .icon_links {
     font-size: 2.5em;
   }
+}
+.icon_links:first-of-type {
+  margin-top: 10px;
 }
 .icon_links a {
   display: inline-block;
@@ -252,6 +254,12 @@ a {
   font-family: "GettyRegular", Arial, sans-serif;
   font-size: 1.5em;
   letter-spacing: -0.3em;
+}
+
+.speakerdeck {
+  font-family: 'Gill Sans', Helvetica;
+  font-weight: lighter;
+  font-size: 0.6em;
 }
 
 .site_container {
