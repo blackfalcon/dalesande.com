@@ -18,3 +18,10 @@ h1 {
 		font-size: #{$heading_2 / $em}em;
 	}
 }
+
+.icon_links {
+	p {
+		font-size: 0.3em !important;
+		color: $charlie_grey;
+	}
+}

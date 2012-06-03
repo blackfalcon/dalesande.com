@@ -15,7 +15,8 @@ a {
 		font-size: #{($x_large_point_size + 6) / $em}em;
 	}
 	&:first-of-type {
-		margin-top: 10px;
+		margin-top: 15px;
+		margin-bottom: 50px;
 	}
 	a {
 		display: inline-block;
@@ -54,8 +55,8 @@ a {
 .getty_icon {
 	@extend .icon;
 	font-family: $getty_icons;
-	font-size: 1.5em;
-	letter-spacing: -0.3em;
+	font-size: 1.3em;
+	letter-spacing: -0.4em;
 }
 
 .twitter {
@@ -75,15 +76,24 @@ a {
 }
 
 .speakerdeck {
-	font-family: 'Gill Sans', Helvetica;
-	font-weight: lighter;
-	font-size: 0.6em;
+	// font-family: 'Gill Sans', Helvetica;
+	// font-weight: lighter;
+	// font-size: 0.6em;
+	@extend .icon;
+	font-family: $getty_icons;
+	font-size: 3.8em;
+	line-height: 0;
+}
+
+.speakerrate {
+	@extend .speakerdeck;
 }
 
 .site_container {
 	position: absolute;
 	left: 50%;
 	top: 50%;
+	width: 960px;
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation : portrait) {
 	   top: 0;
 	   left: 0;
@@ -93,7 +103,7 @@ a {
 	color: $bravo_grey;
 	text-align: center;
 	margin-top: -200px;
-	margin-left: -300px;
+	margin-left: -480px;
 	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation : landscape) {
 		margin-top: -200px;
 		margin-left: -200px;
