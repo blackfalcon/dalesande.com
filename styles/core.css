@@ -243,16 +243,16 @@ a {
   font-size: 30px;
 }
 
-.icon, .getty_icon, .twitter, .linkedin, .github, .googleplus, .speakerdeck, .speakerrate {
+.icon, .getty_icon, .twitter, .linkedin, .github, .googleplus, .tumblr, .speakerdeck, .speakerrate {
   display: inline-block;
   cursor: pointer;
   margin-right: 20px;
   font-family: "zocial", Arial, sans-serif;
 }
-.icon:last-child, .getty_icon:last-child, .twitter:last-child, .linkedin:last-child, .github:last-child, .googleplus:last-child, .speakerdeck:last-child, .speakerrate:last-child {
+.icon:last-child, .getty_icon:last-child, .twitter:last-child, .linkedin:last-child, .github:last-child, .googleplus:last-child, .tumblr:last-child, .speakerdeck:last-child, .speakerrate:last-child {
   margin: 0;
 }
-.icon span, .getty_icon span, .twitter span, .linkedin span, .github span, .googleplus span, .speakerdeck span, .speakerrate span {
+.icon span, .getty_icon span, .twitter span, .linkedin span, .github span, .googleplus span, .tumblr span, .speakerdeck span, .speakerrate span {
   font-size: 0;
 }
 
